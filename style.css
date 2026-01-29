@@ -1,0 +1,72 @@
+<!-- ================= style.css ================= -->
+color:var(--light);
+background:linear-gradient(120deg,#0f0e17,#1a1a2e,#2b1055,#1f1c2c);
+background-size:400% 400%;
+animation:gradientBG 18s ease infinite;
+}
+
+
+@keyframes gradientBG{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+nav{position:fixed;width:100%;background:rgba(15,14,23,.9);z-index:1000}
+.nav-container{max-width:1100px;margin:auto;display:flex;justify-content:space-between;padding:15px}
+nav ul{display:flex;list-style:none;gap:20px}
+nav a:hover{color:var(--primary)}
+section{padding:90px 20px}
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+position:relative;
+overflow:hidden;
+}
+
+
+.hero::before{
+content:"";
+position:absolute;
+width:450px;
+height:450px;
+background:radial-gradient(circle,var(--primary),transparent 70%);
+top:-120px;
+left:-120px;
+opacity:.25;
+animation:float 10s ease-in-out infinite;
+}
+
+
+.hero::after{
+content:"";
+position:absolute;
+width:350px;
+height:350px;
+background:radial-gradient(circle,var(--secondary),transparent 70%);
+bottom:-100px;
+right:-100px;
+opacity:.25;
+animation:float 12s ease-in-out infinite reverse;
+}
+
+
+@keyframes float{
+0%{transform:translateY(0)}
+50%{transform:translateY(25px)}
+100%{transform:translateY(0)}
+}
+.hero-inner{max-width:1100px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.hero img{width:300px;border-radius:50%;border:6px solid var(--primary)}
+.btn{padding:12px 28px;border-radius:30px;background:var(--primary);color:#000;font-weight:600}
+.btn.outline{background:none;border:2px solid var(--primary);color:var(--primary)}
+.title{text-align:center;margin-bottom:50px}
+.title span{color:var(--primary)}
+.grid{max-width:1100px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
+.card{background:var(--card);padding:25px;border-radius:18px;transition:.3s}
+.card:hover{transform:translateY(-8px)}
+.tags span{font-size:12px;padding:5px 10px;border-radius:20px;background:#222;margin:3px;display:inline-block}
+.skills i{font-size:34px;color:var(--primary)}
+.contact{text-align:center}
+footer{text-align:center;padding:20px;color:var(--muted)}
+
