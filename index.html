@@ -1,0 +1,165 @@
+<!-- ================= index.html ================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alishba Nazir | Full Stack Developer</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-container">
+    <h3 class="logo">Alishba</h3>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section id="home" class="hero">
+  <div class="hero-inner" data-aos="fade-up">
+    <div class="hero-text">
+      <h1>Hi, I’m <span>Alishba Nazir</span></h1>
+      <h2 class="typing"></h2>
+      <p>BSCS graduate | Full Stack Developer | AI & ML Enthusiast</p>
+      <a href="#projects" class="btn">View Work</a>
+      <a href="#contact" class="btn outline">Hire Me</a>
+    </div>
+    <div class="hero-img">
+      <img src="profile.jpg" alt="Profile" />
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="title"><h2>About <span>Me</span></h2></div>
+  <p>
+    I am a passionate Full Stack Developer with strong experience in MERN stack, Django, and AI-powered applications.
+    My Final Year Project <strong>DeafEd</strong> focuses on empowering deaf children using sign language recognition and AI.
+  </p>
+</section>
+
+<section id="projects">
+  <div class="title"><h2>Projects & <span>FYP</span></h2></div>
+
+  <div class="project-filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="ai">AI / ML</button>
+    <button class="filter-btn" data-filter="web">Web</button>
+    <button class="filter-btn" data-filter="mobile">Mobile</button>
+  </div>
+
+  <div class="grid">
+    <!-- FYP -->
+    <div class="card project-item mobile ai" data-aos="zoom-in">
+      <h3>DeafEd (Final Year Project)</h3>
+      <p>AI-powered sign language learning app for deaf children with gesture recognition, quizzes, and a progress tracking dashboard.</p>
+      <div class="tags"><span>React Native</span><span>Node.js</span><span>MongoDB</span><span>MediaPipe</span></div>
+      <a href="https://github.com/HasanSohaib-4434/DeafEd" target="_blank">GitHub</a>
+    </div>
+
+    <!-- AI Projects -->
+    <div class="card project-item ai" data-aos="zoom-in">
+      <h3>Arabic → English Translator</h3>
+      <p>Custom Transformer-based Neural Machine Translation system with Streamlit interface.</p>
+      <div class="tags"><span>TensorFlow</span><span>NLP</span><span>Transformer</span></div>
+      <a href="https://github.com/HasanSohaib-4434/ArabicToEnglish" target="_blank">GitHub</a>
+    </div>
+
+    <div class="card project-item ai" data-aos="zoom-in">
+      <h3>Bidirectional Code Translator</h3>
+      <p>Transformer model converting Pseudocode ↔ C++ trained on SPOC dataset.</p>
+      <div class="tags"><span>Deep Learning</span><span>SPOC</span></div>
+    </div>
+
+    <div class="card project-item ai" data-aos="zoom-in">
+      <h3>SoulTune</h3>
+      <p>AI spiritual assistant using speech-to-text, emotion detection and Quranic guidance.</p>
+      <div class="tags"><span>Whisper</span><span>Transformers</span><span>Streamlit</span></div>
+    </div>
+
+    <div class="card project-item ai" data-aos="zoom-in">
+      <h3>Math Riddle Factory</h3>
+      <p>LLM-powered app generating unique math riddles using DeepSeek models.</p>
+      <div class="tags"><span>LLM</span><span>Streamlit</span></div>
+    </div>
+
+    <div class="card project-item ai" data-aos="zoom-in">
+      <h3>Emoji Math Solver</h3>
+      <p>AI-based solver for emoji-style math equations using fine-tuned models.</p>
+      <div class="tags"><span>AI</span><span>Transformers</span></div>
+    </div>
+
+    <!-- Web Projects -->
+    <div class="card project-item web" data-aos="zoom-in">
+      <h3>E-Commerce Website</h3>
+      <p>Django-based e-commerce platform with product catalog, cart, and admin panel.</p>
+      <div class="tags"><span>Django</span><span>Python</span><span>Bootstrap</span></div>
+    </div>
+
+    <div class="card project-item web" data-aos="zoom-in">
+      <h3>Medicare Centre</h3>
+      <p>Telemedicine platform for online doctor consultations and appointments.</p>
+      <div class="tags"><span>Node.js</span><span>MongoDB</span><span>Google Meet API</span></div>
+    </div>
+
+    <!-- Desktop / Systems -->
+    <div class="card project-item web" data-aos="zoom-in">
+      <h3>Global Economy Analyzer</h3>
+      <p>Desktop application for economic data analysis using statistics and graphs.</p>
+      <div class="tags"><span>PyQt</span><span>Pandas</span><span>Matplotlib</span></div>
+    </div>
+
+    <div class="card project-item web" data-aos="zoom-in">
+      <h3>Student Management System</h3>
+      <p>GUI-based system for managing student records, attendance, and grades.</p>
+      <div class="tags"><span>C#</span><span>SQL</span></div>
+    </div>
+
+    <div class="card project-item web" data-aos="zoom-in">
+      <h3>Smart Notepad</h3>
+      <p>Text editor implementing Huffman compression and Trie-based auto suggestions.</p>
+      <div class="tags"><span>C++</span><span>Data Structures</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="skills">
+  <div class="title"><h2>Technical <span>Skills</span></h2></div>
+  <div class="grid">
+    <div class="card"><i class="fab fa-react"></i><h3>React / React Native</h3></div>
+    <div class="card"><i class="fab fa-js"></i><h3>JavaScript / Node.js</h3></div>
+    <div class="card"><i class="fab fa-python"></i><h3>Python / Django</h3></div>
+    <div class="card"><i class="fas fa-brain"></i><h3>AI / ML / NLP</h3></div>
+    <div class="card"><i class="fas fa-code"></i><h3>C++ / C#</h3></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="title"><h2>Contact <span>Me</span></h2></div>
+  <p>Email: <a href="mailto:alishbanazir910@gmail.com">alishbanazir910@gmail.com</a></p>
+  <p>GitHub: <a href="https://github.com/HasanSohaib-4434" target="_blank">github.com</a></p>
+</section>
+
+<footer>© 2026 Alishba Nazir — All Rights Reserved</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
